@@ -1,0 +1,40 @@
+.services-img {
+    background-image: url(../../assets/images/service.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+
+.services-text {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+
+}
+
+.services-text h1 {
+    font-size: 2rem;
+    color: var(--content-color);
+    font-family: "Roboto";
+}
+
+.services-text h6 {
+    font-size: 1rem;
+    color: var(--content-color);
+    font-family: "Roboto";
+    transition: transform 0.4s,color 0.8s;
+}
+.services-text h6:hover{
+    cursor: pointer;
+    color:  #405cc9;
+}
+@media (max-width: 410px) {
+    .services-text h1{
+        font-size: 1.5rem;
+    }
+}

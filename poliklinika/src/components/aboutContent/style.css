@@ -1,0 +1,44 @@
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 10%;
+    gap: 2rem;
+    text-align: left;
+}
+
+.about-content > div {
+    max-width: 90%;
+}
+.about-content h2 {
+    font-size: 2.1rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+    font-family: "Roboto";
+    width: 30rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: var(--title-color);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    width: 30rem;
+    font-family: "Roboto";
+
+}
+
+.about-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .about-content{
+        flex-wrap: wrap;
+    }
+    .about-contentimg{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+:root {
+  --secound-bg-color: #264b8f;
+  --text-color: #333333;
+  --content-color:#fff;
+  --title-color: #666666;
+}

@@ -1,0 +1,100 @@
+.medical {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medical-content {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    height: 5rem;
+    width: 22rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.medical-content:hover {
+    transform: translateY(-10px);
+    opacity: 0.9; 
+}
+
+.medical-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: var(--secound-bg-color);
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.medical-content:hover::after {
+    width: 100%;
+}
+
+.medical-content:focus {
+    outline: 2px solid var(--secound-bg-color);
+    outline-offset: 2px;
+}
+
+.medical-content > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.medical-content h2 {
+    font-size: 1.2rem;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.medical-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medical-title>div>h3{
+    font-size: 2rem;
+    color: var(--text-color);
+    margin:2rem 0;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.medical-title>div>h6{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--title-color);
+    margin:2rem 0;
+    font-family: "Roboto";
+}
+@media(max-width: 768px) {
+    .medical-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .medical-content h2 {
+        font-size: 1rem;
+    }
+
+    .medical-content > img {
+        height: 40px;
+        width: 40px;
+    }
+}

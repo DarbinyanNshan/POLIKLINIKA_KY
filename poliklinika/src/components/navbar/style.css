@@ -1,0 +1,226 @@
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.3rem;
+    width: 100%;
+    background-color: var(--secound-bg-color);
+}
+
+.address{
+    display: flex;
+}
+.no-scroll {
+   overflow: hidden;
+}
+
+.contact-data {
+    display: flex;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+    color: var(--content-color);
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.mail>span {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    color: var(--content-color);
+    margin-right: 0.5rem;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-left: 2rem;
+    color: var(--content-color);
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.phone-number>span {
+    font-size: 1rem;
+    margin: 0.2rem 0.5rem;
+    color: var(--content-color);
+    
+}
+
+.map-text {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--content-color);
+
+}
+
+.map-text>span {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-right: 0.5rem;
+    color: var(--content-color);
+}
+
+.facebook{
+    font-size: 1rem;
+    margin: 1.2rem ;
+    color: var(--content-color);
+}
+.facebook:hover{
+    cursor: pointer;
+}
+.navbar {
+    width: 100%;
+    padding: 1rem 14%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--content-color);
+    box-shadow: 0.013rem 0.013rem 0.013rem 0.013rem var(--secound-bg-color);
+    transition: .3s;
+     top: 0;
+    left: 0;
+    z-index: 3; 
+   
+}
+.navbar.fixed {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   box-shadow: 0 1px 2px rgba(0, 58, 124, 0.9);
+   animation: slideDown 0.3s ease-in-out;
+ }
+.logo>img {
+    width: 14.3rem;
+    height: 3.12rem;
+    font-weight: 600;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+.nav-links a {
+    margin-left: 2.5rem;
+    text-decoration: none;
+    color: var(--title-color) ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Roboto";
+
+}
+
+.nav-links a:hover {
+    color: var(--secound-bg-color);
+}
+
+.nav-links a.active {
+    text-decoration: none;
+    color: var(--secound-bg-color);
+}
+
+.navbar>.new-toggle {
+    display: none;
+}
+
+
+@media (max-width: 1180px) {
+
+   .info {
+       display: none;
+   }
+
+   .logo > img {
+       width: 12.25rem;
+       height: 3.125rem;
+   }
+
+   .nav-links {
+       padding: 2rem;
+   }
+
+   .nav-links a {
+       margin-top: 3rem;
+       margin-left: 0;
+       color: var(--title-color);
+   }
+
+   .navbar > .nav-links {
+       position: fixed; 
+       top: 0;
+       left: 0;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       background-color: var(--content-color);
+        box-shadow: 0.013rem 0.013rem 0.013rem 0.013rem #95959578;
+       width: 70%; 
+       height: 100%; 
+       transform: translateX(-100%);
+       transition: transform 0.45s ease-in-out;
+       text-align: center;
+       padding: 9% 0;
+       z-index: 10;
+   }
+
+   .navbar > .nav-links.open {
+       transform: translateX(0);
+       background-color: var(--title-color);
+   }
+
+   .navbar > .new-toggle {
+       display: flex;
+       width: 3.125rem;
+       height: 3.125rem;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+       z-index: 11;
+       font-size: 1.5rem;
+       color: var(--title-color);
+   }   
+   .navbar .nav-links .close-icon {
+       position: absolute;
+       top: 1rem;
+       right: 1rem;
+       font-size: 2rem;
+       color: var(--title-color);
+       cursor: pointer;
+       z-index: 12;
+   }
+ 
+   .navbar .nav-links.open {
+       position: fixed;
+       top: 0;
+       left: 0;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       background-color: var(--content-color);
+       box-shadow: 0.013rem 0.013rem 0.013rem 0.013rem #000000;
+       width: 70%;
+       height: 100%;
+       transform: translateX(0);
+       transition: transform 0.45s ease-in-out;
+       text-align: center;
+       padding: 9% 0;
+       z-index: 10;
+   }
+   .page-shift {
+       transform: translateX(70%); 
+       transition: transform 0.45s ease-in-out;
+       overflow: hidden; 
+   }
+   
+}
