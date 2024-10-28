@@ -38,7 +38,14 @@
     .about-content{
         flex-wrap: wrap;
     }
-    .about-contentimg{
+    .about-content img{
         max-width: 100%;
+    }
+    .about-content p {
+        width: auto;
+    }
+    .about-content h2 {
+        width: auto;
+        font-size: 1.7rem;
     }
 }

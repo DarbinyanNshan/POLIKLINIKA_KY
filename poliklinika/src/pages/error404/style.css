@@ -1,0 +1,75 @@
+/* Основные стили */
+.error {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.error img {
+    height: 30rem;
+}
+
+.error h2 {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--secound-bg-color);
+}
+
+.error button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: var(--content-color);
+    background-color: var(--secound-bg-color);
+    transition: background-color 0.8s;
+}
+
+.error button:hover {
+    color: var(--secound-bg-color);
+    background-color: var(--content-color);
+    border-color: var(--secound-bg-color);
+    cursor: pointer;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 850px) {
+    .error img {
+        height: 20rem;
+    }
+    .error h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    .error button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .error img {
+        height: 15rem;
+    }
+    .error h2 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    .error button {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .error img {
+        height: 10rem;
+    }
+   
+}
+
+@media (max-width: 300px) {
+    .error img {
+        height: 8rem;
+    }
+   
+}
