@@ -11,3 +11,21 @@
   --content-color:#fff;
   --title-color: #666666;
 }
+
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--title-color);
+  border-radius: 60vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secound-bg-color);
+}
