@@ -47,8 +47,13 @@ export const ContactContent = () => {
             <div className="contact-content">
                 <div className="contact-info">
                     <h2>Ունե՞ք հարցեր։ Դիմեք մեզ</h2>
-                    <h3>Ընդունարան</h3>
-                    <p>Հեռ․ 010286320</p>
+                    <h3>Տնօրեն՝</h3>
+                    <p>Հեռ․ 010-28-63-20</p>
+                    <h3>Մատենավարման բաժին՝</h3>
+                    <p>Հեռ․ 010-28-33-70</p> 
+                    <p>Հեռ․ 010-28-72-60</p>
+                    <h3>Էլ. Հասցե՝</h3>    
+                    <p>poliklinika.yesayan@yerevan.am</p>
                 </div>
                 <div className="contact-input">
                     <form className="contact-form" ref={form} onSubmit={sendEmail}>

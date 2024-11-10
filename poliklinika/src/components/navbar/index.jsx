@@ -65,6 +65,13 @@ export const NavBar = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    };
+
     return (
         <>
             <div className="info">
@@ -92,10 +99,10 @@ export const NavBar = () => {
                             <IoClose />
                         </div>
                     )}
-                    <NavLink to="/" onClick={() => setIsOpen(false)}>Գլխավոր</NavLink>
-                    <NavLink to="/about" onClick={() => setIsOpen(false)}>Մեր մասին</NavLink>
-                    <NavLink to="/services" onClick={() => setIsOpen(false)}>Ծառայություններ</NavLink>
-                    <NavLink to="/contact" onClick={() => setIsOpen(false)}>Կապ</NavLink>
+                    <NavLink to="/" onClick={() => { setIsOpen(false); scrollToTop(); }}>Գլխավոր</NavLink>
+                    <NavLink to="/about" onClick={() => { setIsOpen(false); scrollToTop(); }}>Մեր մասին</NavLink>
+                    <NavLink to="/services" onClick={() => { setIsOpen(false); scrollToTop(); }}>Ծառայություններ</NavLink>
+                    <NavLink to="/contact" onClick={() => { setIsOpen(false); scrollToTop(); }}>Կապ</NavLink>
                 </div>
                 {!isOpen && (
                     <div className="new-toggle" onClick={() => setIsOpen(true)}>

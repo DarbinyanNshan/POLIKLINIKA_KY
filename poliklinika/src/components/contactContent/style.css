@@ -9,10 +9,14 @@
     flex-wrap: wrap; 
 }
 
-.contact-info h2, .contact-info h3 {
+.contact-info h2 {
     color: #405cc9;
 }
 
+.contact-info h3 {
+    color: var(--text-color);
+    margin-top: 2rem;
+}
 .contact-info p {
     margin: 0.5rem 0;
 }
