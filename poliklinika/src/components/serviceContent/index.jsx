@@ -17,25 +17,33 @@ import img13 from "../../assets/images/service/ear.png";
 import img14 from "../../assets/images/service/search.png";
 import img15 from "../../assets/images/service/diagnostic.png";
 import img16 from "../../assets/images/service/surTra.png";
+import img17 from "../../assets/images/service/ptsd.png";
+import img18 from "../../assets/images/service/digestive-system.png";
+import img19 from "../../assets/images/service/dna-test.png";
+
 
 export const ServiceContent = () => {
     const items = [
         { img: img1, title: "Թերապևտիկ" },
-        { img: img2, title: "ՈՒռուցքաբանություն" },
-        { img: img3, title: "Սրտաբանություն" },
-        { img: img4, title: "Մաշկաբանություն" },
-        { img: img5, title: "Ինֆեկցիոն" },
+        { img: img2, title: "Ուռուցքաբանական" },
+        { img: img3, title: "Սրտաբանական" },
+        { img: img4, title: "Մաշկավեներական" },
+        { img: img5, title: "Վարակաբանական" },
         { img: img6, title: "Կանանց կոնսուլտացիա" },
-        { img: img7, title: "Նյարդաբանություն" },
-        { img: img8, title: "Էնդոկրինոլոգիական" },
+        { img: img7, title: "Նյարդաբանական" },
+        { img: img8, title: "Ներզատաբանական" },
         { img: img9, title: "Ատամնաբուժություն" },
-        { img: img10, title: "Ակնաբուժություն" },
+        { img: img10, title: "Ակնաբուժական" },
         { img: img11, title: "Ուրոլոգիական" },
-        { img: img12, title: "Ֆիզիոթերապիա" },
-        { img: img13, title: "ԼՕՌ" },
-        { img: img14, title: "Համաճարակաբանություն" },
-        { img: img15, title: "Գործիքային և ախտորոշիչ" },
-        { img: img16, title: "Վիրաբուժություն" },
+        { img: img12, title: "Ֆիզիոթերապևտիկ" },
+        { img: img13, title: "Քիթ-կոկորդ-ականջաբանական" },
+        { img: img14, title: "Համաճարակաբանական" },
+        { img: img15, title: "Լաբորատոր-գործիքային ախտորոշիչ հետազությունների" },
+        { img: img16, title: "Վիրաբուժական" },
+        { img: img17, title: "Վնասվածքաբանական" },
+        { img: img18, title: "Գաստրոէնտերոլոգիական" },
+        { img: img19, title: "Գենետիկ" },
+
     ];
 
     return (

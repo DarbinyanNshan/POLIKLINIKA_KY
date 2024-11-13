@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import img1 from "../../assets/images/home/xach.png";
 import img2 from "../../assets/images/home/yerevan.png";
-import img3 from "../../assets/images/home/kolektiv.jpg"
+import img3 from "../../assets/images/home/poliklinika.jpg"
 
 import { FaGenderless } from "react-icons/fa";
 import { ServiceContent } from "../../components/serviceContent";

@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 10%; /* նվազեցրեք padding-ը՝ փոքր էկրանների համար */
+    padding: 6rem 9%;
     gap: 2rem;
     text-align: left;
 }
 
 .about-content > div {
-    max-width: 60%; /* սահմանափակում, որ տեքստը խտացված լինի */
+    max-width: 60%; 
 }
 
 .about-content h2 {
@@ -22,24 +22,30 @@
     font-size: 1rem;
     color: var(--title-color);
     line-height: 1.5;
-    margin-bottom: 1rem;
     font-family: "Roboto", sans-serif;
 }
 
 .about-content ul {
-    padding-left: 1.5rem; /* ցուցակի համար ներքին բացվածք */
+    padding-left: 1.5rem;
 }
-
+.about-content ul p{
+    margin-left: 1rem;
+}
 .about-content img {
-    max-width: 40%; /* պատկերն ավելի կոմպակտ դարձնելու համար */
+    max-width: 40%; 
     height: auto;
     border-radius: 8px;
 }
 
+.content-table{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
 @media (max-width: 900px) {
     .about-content {
         flex-wrap: wrap;
-        padding: 4rem 5%; /* փոքր էկրանների համար կրճատված padding */
+        padding: 4rem 5%;
     }
     .about-content img {
         max-width: 100%;

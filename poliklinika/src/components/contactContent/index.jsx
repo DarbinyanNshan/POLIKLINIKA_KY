@@ -95,15 +95,14 @@ export const ContactContent = () => {
                 </div>
             </div>
             <div className="contact-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1865.0076900942845!2d44.50562924612217!3d40.20316991008341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd387fb7fd3f%3A0xc540c6ec2630aead!2sHrachya%20Kochar%20St%2C%20Yerevan!5e0!3m2!1sru!2sam!4v1722245166997!5m2!1sru!2sam"
-                        width="600"
-                        height="450"
-                        style={{ border: "0" }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.1878403698706!2d44.52908687585657!3d40.20488437147438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406aa2d2b7333edd%3A0xb4c9db1109b82ea5!2zwqvUv9Wh1bzVrNWl1bYg1LXVvdWh1bXVodW21asg1LHVttW-1aHVtiDVitW41azVq9Wv1azVq9W21avVr9Whwrsg1ZPUstS4!5e0!3m2!1sru!2sam!4v1731340307816!5m2!1sru!2sam" 
+            width="600" 
+            height="450" 
+            style={{ border: "0" }}
+            allowfullscreen=""
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </div>
         </>
     );
